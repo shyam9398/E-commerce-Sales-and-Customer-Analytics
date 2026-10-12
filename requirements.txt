@@ -1,0 +1,15 @@
+# E-commerce BI Project — Python dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Core data processing
+pandas==3.0.5
+numpy==2.4.6
+
+# Visualisation
+matplotlib==3.11.0
+seaborn==0.13.2
+
+# Jupyter notebook support
+nbformat==5.11.1
+nbconvert==7.17.1
+jupyter

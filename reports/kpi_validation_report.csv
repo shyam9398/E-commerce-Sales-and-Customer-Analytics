@@ -1,0 +1,39 @@
+kpi,reported_value,recomputed_value,abs_difference,status,scope,note
+total_orders,138116.0,138116.0,0.0,PASS,all,
+completed_orders,113559.0,113559.0,0.0,PASS,Completed,
+returned_orders,9462.0,9462.0,0.0,PASS,Returned,
+cancelled_orders,8398.0,8398.0,0.0,PASS,Cancelled,
+pending_orders,6697.0,6697.0,0.0,PASS,Pending,
+return_rate_%,7.69,7.6914,0.0014,PASS,Returned/(Completed+Returned),Denominator: Completed+Returned only — Cancelled/Pending excluded
+cancellation_rate_%,6.08,6.0804,0.0004,PASS,Cancelled/all orders,
+gross_sales_completed_multiccy,158943395.16,158943395.16,0.0,PASS,"Completed, multi-ccy pooled",
+net_sales_completed_multiccy,144195838.5,144195838.5,0.0,PASS,"Completed, multi-ccy pooled",
+total_profit_completed_multiccy,59758469.03,59758469.03,0.0,PASS,"Completed, multi-ccy pooled",
+overall_profit_margin_%,41.44,41.4426,0.0026,PASS,"profit/net_sales*100, Completed","Denominator is net_sales, not gross_sales"
+avg_order_value_gross_completed,1399.65,1399.6548,0.0048,PASS,Completed,
+avg_order_value_net_completed,1269.79,1269.7879,0.0021,PASS,Completed,
+negative_profit_completed_orders,1229.0,1229.0,0.0,PASS,Completed,
+on_time_delivery_rate_%,76.54,76.5382,0.0018,PASS,Completed+Returned where delivery_days not null,Cancelled/Pending excluded; null delivery_days excluded
+avg_delivery_days,4.56,4.5578,0.0022,PASS,Completed+Returned with delivery data,
+avg_estimated_delivery_days,4.3,4.2989,0.0011,PASS,Completed+Returned with delivery data,
+avg_customer_rating,3.677,3.677,0.0,PASS,Completed orders with rating,All Completed orders have a rating (100% coverage)
+rating_coverage_%,100.0,100.0,0.0,PASS,Completed,
+discount_usage_rate_%,100.0,99.9965,0.0035,PASS,Completed,100% of Completed orders carry discount_amount > 0 — all orders discounted
+coupon_usage_rate_%,19.97,19.9746,0.0046,PASS,Completed,
+loyalty_redemption_rate_%,49.9,49.941,0.041,PASS,Completed,
+currency_AED_net_sales,4256140.17,4256140.17,0.0,PASS,"Completed, AED only",Currency-segregated check
+currency_AED_profit,1613772.71,1613772.71,0.0,PASS,"Completed, AED only",Currency-segregated check
+currency_AUD_net_sales,7103804.34,7103804.34,0.0,PASS,"Completed, AUD only",Currency-segregated check
+currency_AUD_profit,2864319.43,2864319.43,0.0,PASS,"Completed, AUD only",Currency-segregated check
+currency_CAD_net_sales,7364992.62,7364992.62,0.0,PASS,"Completed, CAD only",Currency-segregated check
+currency_CAD_profit,3108829.92,3108829.92,0.0,PASS,"Completed, CAD only",Currency-segregated check
+currency_EUR_net_sales,12995322.87,12995322.87,0.0,PASS,"Completed, EUR only",Currency-segregated check
+currency_EUR_profit,5958276.03,5958276.03,0.0,PASS,"Completed, EUR only",Currency-segregated check
+currency_GBP_net_sales,22807761.7,22807761.7,0.0,PASS,"Completed, GBP only",Currency-segregated check
+currency_GBP_profit,10496229.2,10496229.2,0.0,PASS,"Completed, GBP only",Currency-segregated check
+currency_INR_net_sales,6323689.82,6323689.82,0.0,PASS,"Completed, INR only",Currency-segregated check
+currency_INR_profit,2856383.82,2856383.82,0.0,PASS,"Completed, INR only",Currency-segregated check
+currency_USD_net_sales,83344126.98,83344126.98,0.0,PASS,"Completed, USD only",Currency-segregated check
+currency_USD_profit,32860657.92,32860657.92,0.0,PASS,"Completed, USD only",Currency-segregated check
+repeat_customer_rate_%_row_level,99.8,99.76,0.0,PASS_WITH_NOTE,all rows,"99.8% is share of ORDER ROWS where is_repeat_customer=True. False rows are each customer's first order only. Not an error, but the KPI label is misleading. Customer-level repeat rate = 98.66% (24,577 of 24,911 unique customers)."
+monthly_trend_coverage,60.0,60.0,0.0,PASS,Jan-2021 to Dec-2025,Missing: []; Extra: []

@@ -1,0 +1,28 @@
+check,before,after,note
+rows_raw,138116,138116,
+cols_raw,46,49,"3 helper cols added: order_year, order_month, order_dow"
+exact_duplicate_rows,0,0,None found
+order_id_repeated,0,0,Repeated IDs kept — may reflect intentional duplicates or splits
+invalid_order_date,0,0,Rows dropped
+missing_delivery_days,24557,24557,Preserved — structurally expected absence
+missing_estimated_delivery_days,24557,24557,Preserved — structurally expected absence
+missing_customer_rating,24557,24557,Preserved — structurally expected absence
+missing_review_sentiment,24557,24557,Preserved — structurally expected absence
+missing_customer_review,24557,24557,Preserved — structurally expected absence
+missing_return_status,128654,128654,Preserved — structurally expected absence
+missing_return_reason,128654,128654,Preserved — structurally expected absence
+missing_campaign_name,83233,83233,Preserved — structurally expected absence
+missing_coupon_code,110502,110502,Preserved — structurally expected absence
+age_out_of_range,0,0,Logged; no drop unless documented above
+quantity_lte_zero,0,0,Logged; no drop unless documented above
+gross_sales_lte_zero,0,0,Logged; no drop unless documented above
+net_sales_lte_zero,0,0,Logged; no drop unless documented above
+product_cost_lte_zero,0,0,Logged; no drop unless documented above
+delivery_days_negative,0,0,Logged; no drop unless documented above
+estimated_delivery_days_negative,0,0,Logged; no drop unless documented above
+negative_profit_rows,1296,1296,Logged; no drop unless documented above
+margin_discrepancy_rows,0,0,Logged; no drop unless documented above
+financial_formula_deviations,0,0,Logged; no drop unless documented above
+dropped_invalid_order_date,0,0,Applied
+dropped_quantity_lte_zero,0,0,Applied
+dropped_gross_sales_lte_zero_kept,0,0,Applied

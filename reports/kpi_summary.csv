@@ -1,0 +1,26 @@
+kpi,value,scope
+total_orders,138116.0,all statuses
+completed_orders,113559.0,Completed
+returned_orders,9462.0,Returned
+cancelled_orders,8398.0,Cancelled
+pending_orders,6697.0,Pending
+return_rate_%,7.69,Returned/(Completed+Returned)
+cancellation_rate_%,6.08,Cancelled/all
+gross_sales_completed_multiccy,158943395.16,"Completed, multi-currency"
+net_sales_completed_multiccy,144195838.5,"Completed, multi-currency"
+total_profit_completed_multiccy,59758469.03,"Completed, multi-currency"
+overall_profit_margin_%,41.44,Completed
+avg_order_value_gross_completed,1399.65,Completed
+avg_order_value_net_completed,1269.79,Completed
+negative_profit_completed_orders,1229.0,Completed
+avg_delivery_days,4.56,Completed+Returned with data
+avg_estimated_delivery_days,4.3,Completed+Returned with data
+on_time_delivery_rate_%,76.54,Completed+Returned with data
+avg_customer_rating,3.677,"Completed, rated orders"
+rating_coverage_%,100.0,Completed
+discount_usage_rate_%,100.0,Completed
+avg_discount_rate_%,17.36,Completed
+coupon_usage_rate_%,19.97,Completed
+loyalty_redemption_rate_%,49.9,Completed
+repeat_customer_rate_%,99.8,ORDER ROWS flagged True / all rows — see customer_level_repeat_rate_% for customer-level metric
+customer_level_repeat_rate_%,98.66,unique customers with >1 order / all unique customers

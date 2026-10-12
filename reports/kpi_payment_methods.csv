@@ -1,0 +1,29 @@
+payment_method,payment_status,orders
+Credit Card,Paid,31220
+Debit Card,Paid,20819
+PayPal,Paid,15564
+Digital Wallet,Paid,12454
+Cash on Delivery,Paid,10504
+Buy Now Pay Later,Paid,8413
+Bank Transfer,Paid,5276
+Credit Card,Pending,4227
+Credit Card,Failed,3095
+Credit Card,Refunded,2918
+Debit Card,Pending,2871
+Debit Card,Failed,2098
+PayPal,Pending,2085
+Debit Card,Refunded,1847
+Digital Wallet,Pending,1653
+PayPal,Failed,1631
+PayPal,Refunded,1470
+Cash on Delivery,Pending,1381
+Digital Wallet,Failed,1211
+Buy Now Pay Later,Pending,1068
+Digital Wallet,Refunded,1064
+Cash on Delivery,Failed,1044
+Cash on Delivery,Refunded,934
+Buy Now Pay Later,Failed,840
+Buy Now Pay Later,Refunded,740
+Bank Transfer,Pending,690
+Bank Transfer,Failed,510
+Bank Transfer,Refunded,489
