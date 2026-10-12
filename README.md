@@ -322,7 +322,7 @@ These are proposed enhancements, not completed features.
 - Seaborn Documentation: https://seaborn.pydata.org/
 - Jupyter Documentation: https://docs.jupyter.org/
 
-**Original dataset source:** Not yet verified. Add the original publisher's URL here only after confirming that it matches the dataset used in this project.
+**Original dataset source:** (https://www.kaggle.com/datasets/datascikhan/e-commerce-sales-and-customer-analytics)
 
 ## 17. Author
 
